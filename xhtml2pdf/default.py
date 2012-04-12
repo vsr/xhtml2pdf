@@ -223,6 +223,7 @@ TAGS = {
 
     "img": (0, {
         "src":                  (FILE, MUST),
+        "href":                 (STRING, ""),
         "width":                SIZE,
         "height":               SIZE,
         "align":                ["top", "middle", "bottom", "left", "right",
