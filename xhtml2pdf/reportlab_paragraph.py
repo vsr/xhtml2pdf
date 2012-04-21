@@ -213,7 +213,7 @@ def _putFragLine(cur_x, tx, line):
                 # print "draw", id(f), id(cbDefn.image), repr(dal), cur_y, iy0, iy1, h
                 if f.link:
                     # hack to make the image click-able if it has href attribute
-                    tx._canvas.linkURL(f.link, (cur_x_s,cur_y+iy0,w,h), relative=1)
+                    tx._canvas.linkURL(f.link, (cur_x_s,cur_y+iy0,cur_x_s+w,cur_y+iy0+h), relative=1)
                 tx._canvas.drawImage(cbDefn.image.getImage(),cur_x_s,cur_y+iy0,w,h,mask='auto')
                 cur_x += w
                 cur_x_s += w
